@@ -13,7 +13,7 @@ const SITE = {
 
 const PROJECTS = [
   {
-    title: "FlexAI — Pose-Mirroring Robot Arm",
+    title: "Botfoh — Pose-Mirroring Robot Arm",
     description: "A robot arm that copies your arm movements in real time. PoseNet runs on a Coral Edge TPU to track body keypoints from a camera. Those keypoints are turned into joint angles for five servos: base, shoulder, elbow, wrist and gripper. Touching your wrists together closes the gripper. A Flask server streams the annotated camera feed live.",
     tags: ["Python", "PoseNet", "Edge TPU", "Raspberry Pi", "Servos"],
     youtube: "https://www.youtube.com/shorts/7ANikwv1Eg4",
