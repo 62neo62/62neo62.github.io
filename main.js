@@ -13,6 +13,15 @@ const YT_ICON = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="tr
 document.title = SITE.name;
 document.getElementById("name").textContent = SITE.name;
 document.getElementById("tagline").textContent = SITE.tagline;
+const avatar = document.getElementById("avatar");
+const initials = SITE.name.split(/\s+/).map(w => w[0]).join("").slice(0, 2).toUpperCase();
+avatar.textContent = initials;
+if (SITE.photo) {
+  const img = new Image();
+  img.alt = SITE.name;
+  img.onload = () => { avatar.textContent = ""; avatar.appendChild(img); avatar.removeAttribute("aria-hidden"); };
+  img.src = SITE.photo;
+}
 const links = [`<a href="https://github.com/${esc(SITE.github)}" target="_blank" rel="noopener">${GH_ICON} GitHub</a>`];
 if (SITE.youtubeChannel) links.push(`<a href="${esc(SITE.youtubeChannel)}" target="_blank" rel="noopener">${YT_ICON} YouTube</a>`);
 if (SITE.email) links.push(`<a href="mailto:${esc(SITE.email)}">✉ Email</a>`);

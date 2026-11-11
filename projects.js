@@ -4,10 +4,11 @@
 // image: optional picture (shown below the video if there is one), e.g. "images/my-project.jpg" (put the file in the images/ folder).
 const SITE = {
   name: "Sebastian Escoriza",
-  tagline: "Machine learning, signal processing & digital hardware projects",
+  tagline: "hardware, vision",
   github: "62neo62",
   youtubeChannel: "", // e.g. "https://www.youtube.com/@yourchannel"
   email: "",          // optional
+  photo: "",          // headshot, e.g. "images/headshot.jpg" (square crop works best). Leave "" to show initials.
 };
 
 const PROJECTS = [
