@@ -8,7 +8,7 @@ const SITE = {
   github: "62neo62",
   youtubeChannel: "", // e.g. "https://www.youtube.com/@yourchannel"
   email: "",          // optional
-  photo: "",          // headshot, e.g. "images/headshot.jpg" (square crop works best). Leave "" to show initials.
+  photo: "images/headshot.jpg",        // headshot, e.g. "images/headshot.jpg" (square crop works best). Leave "" to show initials.
 };
 
 const PROJECTS = [
